@@ -1,0 +1,10 @@
+@use "../variables/colors.scss" as sc;
+
+header {
+    h1 {
+        color: sc.$primary-black;
+    }
+    p {
+        color: sc.$secondary-purple;
+    }
+}

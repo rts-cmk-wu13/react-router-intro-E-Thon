@@ -1,0 +1,28 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "headline": "Total distance",
+            "image": "imgs/icons/map.svg",
+            "specification": "17.8 KM"
+        },
+        {
+            "id": 2,
+            "headline": "Total battery",
+            "image": "imgs/icons/battery-charging.svg",
+            "specification": "100%"
+        },
+        {
+            "id": 3,
+            "headline": "Average speed",
+            "image": "imgs/icons/zap.svg",
+            "specification": "45 Km/h"
+        },
+        {
+            "id": 3,
+            "headline": "Ride Updated",
+            "image": "imgs/icons/upload.svg",
+            "specification": "1 day ago"
+        }
+    ]
+}

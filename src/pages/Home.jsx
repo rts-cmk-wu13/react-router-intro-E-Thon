@@ -2,11 +2,13 @@ import Button from "../components/button/Button"
 import logo from "/imgs/Rockit-logo.svg"
 import homeImg from "/imgs/home.svg"
 import chevronRight from "/imgs/icons/chevrons-right.svg"
+import "./Home.scss"
+
 
 export default function Home () {
     return (
         <>
-        <header>
+        <header class="homescreen-header">
             <img src={logo} alt="Rockit logo" />
             <h1>Rockit</h1>
         </header>
