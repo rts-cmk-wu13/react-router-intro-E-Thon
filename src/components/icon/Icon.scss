@@ -1,0 +1,7 @@
+@use "../../variables/colors.scss" as sc;
+svg {
+    width: 2rem; 
+    height: 2rem; 
+    object-view-box: 0 0 32 32; 
+    fill: sc.$primary-purple;
+}

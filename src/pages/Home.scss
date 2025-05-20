@@ -4,7 +4,35 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+
     img {
         width: 2rem;
+    }
+
+    h1 {
+        color: sc.$primary-white;
+    }
+}
+
+.home-main {
+    place-items: center;
+    max-width: 19.66rem;
+    width: 100%;
+    margin: 0 auto;
+
+    section {
+        h2 {
+            color: sc.$primary-white;
+            text-align: center;
+        }
+
+        p {
+            color: sc.$primary-white;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: sc.$primary-orange;
+        }
     }
 }

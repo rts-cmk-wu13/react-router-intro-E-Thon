@@ -3,6 +3,8 @@ import './App.scss'
 import Home from './pages/Home'
 import Myscooter from './pages/Myscooter'
 import Settings from './pages/Settings'
+import Users from './pages/Users'
+import UsersDetail from './pages/UserDetail'
 
 export default function App() {
   const router = createBrowserRouter([
@@ -17,6 +19,14 @@ export default function App() {
     {
       path: "settings",
       element: <Settings />
+    },
+    {
+      path: "users",
+      element: <Users />
+    },
+    {
+      path: "users/:id",
+      element: <UsersDetail />
     }
   ])
 

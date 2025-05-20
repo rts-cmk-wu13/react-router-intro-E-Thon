@@ -3,13 +3,13 @@ export default function Header({name, text, img, burger}) {
     
     return (
         <>
-            <header class="header">
+            <header className="header">
                 <img src={img} alt="profile picture" />
                 <div>
                     <h1>{name}</h1>
                     <p>{text}</p>
                 </div>
-                <img src={burger} alt="burgermenu" onClick={ToggleEvent} />
+                <div alt="burgermenu" onClick={ToggleEvent}>{burger}</div>
             </header>
         </>
     )

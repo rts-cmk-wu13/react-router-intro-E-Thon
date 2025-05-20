@@ -1,6 +1,5 @@
 import Header from "../components/header/Header"
 import whitney from "/imgs/whitney.svg"
-import burgerIcon from "/imgs/icons/Union.svg"
 import scooter from "/imgs/scooter.svg"
 import lockIcon from "/imgs/icons/lock.svg"
 import Cards from "../components/cards/cards"
@@ -8,7 +7,9 @@ import { useEffect, useState } from "react"
 import Information from "../components/information/Information"
 import Lock from "../components/lock/Lock"
 import "./Myscooter.scss"
-
+import { FiShare, FiBatteryCharging, FiMap, FiZap } from "react-icons/fi";
+import CornerDotsIcon from "../components/icon/Icon"
+import { MdLock } from "react-icons/md";
 
 export default function Myscooter() {
     const [cards, setCards] = useState([])
@@ -18,13 +19,19 @@ export default function Myscooter() {
             .then(data => setCards(data.cards))
     }, [])
 
+    const iconMap = {
+        FiMap: <FiMap />,
+        FiBatteryCharging: <FiBatteryCharging />,
+        FiZap: <FiZap/>,
+        FiShare: <FiShare />
+    }
     return (
         <>
             <Header
                 img={whitney}
                 name="Whitney Leon"
                 text="Welcome back !"
-                burger={burgerIcon}
+                burger={<CornerDotsIcon/>}
             />
             <main>
                 <Information
@@ -36,13 +43,13 @@ export default function Myscooter() {
                 <Lock 
                     header="Whitney’s Scooter"
                     text="Locked"
-                    icon={lockIcon}
+                    icon={<MdLock/>}
                 />
                 {cards.map(card => (
                     <Cards 
                         key={card.id}
                         header={card.header}
-                        icon={card.image}
+                        icon={iconMap[card.image]}
                         specifics={card.specification}
                     />
                 ))}
